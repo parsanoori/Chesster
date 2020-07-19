@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="100.0" minWidth="300.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Signup">
+   <center>
+      <VBox alignment="CENTER" maxWidth="300.0" spacing="3.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="name" promptText="Name" />
+            <TextField fx:id="username" promptText="Username" />
+            <PasswordField fx:id="password" promptText="Password" />
+            <PasswordField fx:id="confirmPassword" promptText="Confirm Password" />
+
+            <HBox>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#signup" text="Sign Up" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <VBox.margin>
+                  <Insets bottom="1.0" right="1.0" top="3.0" />
+               </VBox.margin>
+               <children>
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" mnemonicParsing="false" onAction="#login" text="Login" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label fx:id="error" textFill="RED" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
